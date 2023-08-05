@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import * as RadixTooltip from "@radix-ui/react-tooltip";
+import * as Primitive from "@radix-ui/react-tooltip";
 
 type Arrow = {
   width: number;
@@ -15,17 +15,17 @@ interface TooltipProps {
 
 function Tooltip({ content, children, delay, arrow }: TooltipProps) {
   return (
-    <RadixTooltip.Provider delayDuration={delay || 250}>
-      <RadixTooltip.Root>
-        <RadixTooltip.Trigger asChild>{children}</RadixTooltip.Trigger>
-        <RadixTooltip.Content side="top" align="center">
+    <Primitive.Provider delayDuration={delay || 250}>
+      <Primitive.Root>
+        <Primitive.Trigger asChild>{children}</Primitive.Trigger>
+        <Primitive.Content side="top" align="center">
           {content}
           {arrow && (
-            <RadixTooltip.Arrow width={arrow.width} height={arrow.height} />
+            <Primitive.Arrow width={arrow.width} height={arrow.height} />
           )}
-        </RadixTooltip.Content>
-      </RadixTooltip.Root>
-    </RadixTooltip.Provider>
+        </Primitive.Content>
+      </Primitive.Root>
+    </Primitive.Provider>
   );
 }
 

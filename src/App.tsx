@@ -1,4 +1,4 @@
-import Tooltip from "./core/components/Tooltip";
+import Tooltip from "core/components/Tooltip";
 
 function App() {
   return (
