@@ -1,6 +1,6 @@
-# Frontend Template
+# Component Library
 
-A lightweight frontend template that can be used to start up a frontend application.
+A collection of UI components.
 
 ## Tools
 
