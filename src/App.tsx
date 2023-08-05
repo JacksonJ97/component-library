@@ -1,5 +1,13 @@
+import Tooltip from "./core/components/Tooltip";
+
 function App() {
-  return <div className="text-3xl font-bold underline">Hello World!</div>;
+  return (
+    <div className="min-h-screen bg-slate-700">
+      <Tooltip content="Tooltip">
+        <button type="button">Hover Over Me</button>
+      </Tooltip>
+    </div>
+  );
 }
 
 export default App;
